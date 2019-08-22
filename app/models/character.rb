@@ -6,6 +6,6 @@ class Character < ActiveRecord::Base
     array = []
     array << self.name
     array << self.catchphrase
-    array.join(": ")
+    array.join(" always says: ")
   end
 end
