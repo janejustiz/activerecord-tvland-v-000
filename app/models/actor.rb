@@ -16,7 +16,7 @@ class Actor < ActiveRecord::Base
       output = []
       output << character.name
       output << character.show.name
-      aracy << output.join(" - ")
+      array << output.join(" - ")
     end
     array
   end
