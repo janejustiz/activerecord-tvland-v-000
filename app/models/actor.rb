@@ -9,4 +9,15 @@ class Actor < ActiveRecord::Base
     name = array.join(" ")
     name
   end
+
+  def list_roles
+    array = []
+    self.characters.each do |character|
+      output = []
+      output << character.name
+      output << character.show.name
+      aracy << output.join(" - ")
+    end
+    array
+  end
 end
